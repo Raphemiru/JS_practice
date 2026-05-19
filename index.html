@@ -8,18 +8,45 @@
   </head>
   <body>
     <!-- SEARCH BAR -->
-    <div class="search-container">
-      <form action="/search" method="GET">
-        <input
-          type="search"
-          name="city"
-          placeholder="Search..."
-          label="Search website"
-        />
-        <button type="submit " id="search-button">
-          <img src="images/search.png" alt="search" />
-        </button>
-      </form>
-    </div>
+    <main>
+      <search class="search-container">
+        <form action="/search" method="GET">
+          <input
+            type="search"
+            name="city"
+            placeholder="Search..."
+            aria-label="Search city"
+          />
+          <button type="submit" id="search-button">
+            <img src="images/search.png" alt="Search" />
+          </button>
+        </form>
+      </search>
+
+      <!-- MAIN BODY: weather icon, temp, conditions -->
+      <section aria-label="Current weather">
+        <!-- WEATHER ICON -->
+        <div class="weather-icon">
+          <img src="" alt="" id="weather-icon" />
+        </div>
+        <p id="temperature"></p>
+        <p id="city"></p>
+
+        <!-- WEATHER DETAILS -->
+        <div class="weather-details">
+          <div class="humidity">
+            <img src="images/humidity.png" alt="" />
+            <p id="humidity"></p>
+            <p>Humidity</p>
+          </div>
+
+          <div class="wind">
+            <img src="images/wind.png" alt="" />
+            <p id="wind-speed"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
