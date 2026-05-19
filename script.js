@@ -13,3 +13,10 @@ const city = document.getElementById("city");
 // WEATHER DETAILS
 const humidityLevel = document.getElementById("humidity-level");
 const windSpeed = document.getElementById("wind-speed");
+
+const fetchWeather = () => {
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}`;
+  fetch(url);
+};
+
+searchButton.addEventListener("click", () => {});
