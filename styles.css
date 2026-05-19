@@ -41,24 +41,26 @@ section {
   margin-top: 12px;
 }
 
-.weather-details-icon {
-  margin-top: 2rem;
-  transform: scale(0.8);
+/* ALIGNMENT OF CURRENT WEATHER, TEMPERATURE, & CITY */
+
+.weather-main {
   text-align: center;
 }
 
-/* ALIGNMENT OF TEMPERATURE & CITY */
+#weather-main-icon {
+  margin-top: 2rem;
+  transform: scale(0.8);
+}
+
 #temperature {
   font-size: 3.5rem;
-  margin-top: 1.75rem;
-  text-align: center;
+  margin-top: 1px;
 }
 
 #city {
   font-size: 2.5rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
-  text-align: center;
 }
 
 .weather-details {
