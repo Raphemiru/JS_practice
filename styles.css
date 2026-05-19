@@ -6,7 +6,40 @@
 }
 
 body {
-  background-color: #e8e8e8;
+  background: linear-gradient(135deg, #f9c5d1, #a8d8ea, #f9f9f9);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-details {
+  display: flex;
+  gap: 4rem;
+}
+
+.humidity {
+  margin-top: 12px;
+}
+
+#humidity {
+  font-family: "Poppines", sans-serif;
 }
 
 /* NEOBRUTALISM DESIGN FOR SEARCH BAR */
