@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <!-- Removed the space in src and improved the alt text -->
-    <img src="strawhats.jpg" alt="The Straw Hat Pirates crew posing together" />
-    <script src="script.js"></script>
+    <!-- SEARCH BAR -->
+    <div class="search-container">
+      <form action="/search" method="GET">
+        <input
+          type="search"
+          name="city"
+          placeholder="Search..."
+          label="Search website"
+        />
+        <button type="submit " id="search-button">
+          <img src="images/search.png" alt="search" />
+        </button>
+      </form>
+    </div>
   </body>
 </html>
