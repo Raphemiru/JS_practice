@@ -32,28 +32,32 @@
       <section aria-label="Current weather">
         <!-- WEATHER ICON -->
         <div class="weather-icon">
-          <img src="images/clouds.png" alt="" id="weather-icon" />
+          <img src="images/clouds.png" alt="" id="weather-details-icon" />
+          <p id="temperature">Temp<!-- TEMPERATURE --></p>
+          <p id="city">City<!-- CITY --></p>
         </div>
-        <p id="temperature">Temp<!-- TEMPERATURE --></p>
-        <p id="city">
-          City
-          <!-- CITY -->
-        </p>
 
         <!-- WEATHER DETAILS -->
         <div class="weather-details">
+          <!-- Humidity Section -->
           <div class="humidity">
-            <img src="images/humidity.png" alt="" />
-            <p id="humidity">1</p>
+            <img src="images/humidity.png" alt="" class="weather-image" />
+            <div class="weather-text">
+              <p class="weather-value" id="humidity-level">56%</p>
+              <p class="weather-label">Humidity</p>
+            </div>
           </div>
-          <p>Humidity</p>
 
+          <!-- Wind Section -->
           <div class="wind">
-            <img src="images/wind.png" alt="" />
-            <p id="wind-speed">1</p>
+            <img src="images/wind.png" alt="" class="weather-image" />
+            <div class="weather-text">
+              <p class="weather-value" id="wind-speed">wind speed kp/h</p>
+              <p class="weather-label">Wind Speed</p>
+            </div>
           </div>
-          <p>Wind Speed</p>
         </div>
+        <!---->
       </section>
     </main>
   </body>

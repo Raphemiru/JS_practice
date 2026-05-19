@@ -41,7 +41,7 @@ section {
   margin-top: 12px;
 }
 
-.weather-icon {
+.weather-details-icon {
   margin-top: 2rem;
   transform: scale(0.8);
 }
@@ -50,12 +50,14 @@ section {
 #temperature {
   font-size: 3.5rem;
   margin-top: 1.75rem;
+  justify-content: center;
 }
 
 #city {
   font-size: 2.5rem;
   margin-top: 0.75rem;
   margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .weather-details {
@@ -66,8 +68,31 @@ section {
 .humidity,
 .wind {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 8px;
+}
+
+.weather-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.weather-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.weather-label {
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+.weather-image {
+  margin-top: 0px;
+  transform: scale(0.6);
 }
 
 /* NEOBRUTALISM DESIGN FOR SEARCH BAR */
