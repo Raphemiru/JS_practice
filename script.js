@@ -45,7 +45,7 @@ const fetchWeather = async () => {
     humidityLevel.textContent = weatherData.main.humidity;
     windSpeed.textContent = weatherData.wind.speed;
   } catch (error) {
-    console.log(`Error: ${error}`);
+    alert("City not found. Please try again.");
   }
 };
 
