@@ -14,9 +14,20 @@ const city = document.getElementById("city");
 const humidityLevel = document.getElementById("humidity-level");
 const windSpeed = document.getElementById("wind-speed");
 
-const fetchWeather = () => {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}`;
-  fetch(url);
+const fetchWeather = async () => {
+  try {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}`;
+    const response = await fetch(apiUrl);
+    const weatherData = await response.json();
+    console.log(weatherData);
+    // the other code
+  } catch (error) {
+    console.log(`Error: ${error}`);
+  }
 };
 
-searchButton.addEventListener("click", () => {});
+searchButton.addEventListener("click", () => {
+  console.log("button clicked");
+  fetchWeather();
+  event.preventDefault();
+});
